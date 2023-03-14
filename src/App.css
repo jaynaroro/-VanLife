@@ -1,0 +1,105 @@
+.App{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  padding: 30px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.logo{
+  margin-right: auto;
+}
+
+.about-link{
+  margin-right: 35px;
+}
+
+.links{
+  text-decoration: none;
+  color: #4D4D4D;
+  font-weight: 600;
+}
+
+.links:hover {
+  color: #161616;
+  text-decoration: underline;
+}
+
+.footer{
+  background-color: #252525 ;
+  color: #AAAAAA;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.home{
+  background: no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  min-height: 400px;
+  padding: 45px 23px;
+}
+
+.home h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 42px;
+}
+
+.home p {
+  line-height: 24px;
+}
+
+.home > button{
+  margin-top: 30px;
+  background-color: #FF8C38;
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight:700;
+  cursor: pointer;
+  transition: transform .1s ease-in-out;
+}
+
+
+
+.about img{
+  width: 100%;
+}
+
+.about-text{
+  padding: 50px;
+  line-height: 40px;
+}
+
+.about section{
+  margin-top: 60px;
+  background-color: #ffcc8d;
+  display: flex;
+  flex-direction: column;
+  text-align:left;
+  padding: 50px;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.about button{
+  background-color: black;
+  color: white;
+  width: 180px;
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
