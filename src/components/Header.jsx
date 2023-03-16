@@ -6,8 +6,9 @@ export default function Header(){
     return (
         <nav className="header">
             <Link className="logo" to="/"><img src={logo} alt="vanlife" /></Link>
-            <Link className="about-link links" to="/About">About</Link>
-            <Link className="links" to="/Vans">Vans</Link>
+            <Link to="/Host">Host</Link>
+            <Link to="/About">About</Link>
+            <Link to="/Vans">Vans</Link>
         </nav>
     )
 }

@@ -1,21 +1,27 @@
-import { useState } from 'react'
 import {Routes, Route} from 'react-router-dom'
 import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Home from './components/Home'
-import About from './components/About'
+import Home from './pages/Home'
+import About from './pages/About'
+import Vans from './pages/Vans'
+import Host from './pages/Host'
+import VanDetails from './pages/VanDetails'
+import './server.js'
+import Layout from './components/Layout'
+
 
 export default function App() {
 
   return (
     <div className="App">
-      <Header />
       <Routes>
+        <Route element={<Layout />}>
         <Route path="/" element={<Home />}/>
         <Route path="/About" element={<About />}/>
+        <Route path="/Vans" element={<Vans />}/>  
+        <Route path="/Vans/:id" element={<VanDetails />}/>
+        <Route path="/Host" element={<Host />}/>
+        </Route> 
       </Routes>
-      <Footer/>
     </div>
   )
 }
