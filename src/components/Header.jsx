@@ -1,14 +1,22 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import logo from "../assets/vanlife.png"
 
 export default function Header(){
+
+    const activeStyle = {
+        textDecoration: 'underline',
+        fontWeight: 'bold',
+        color: "#161616"
+    }
+
+
     return (
         <nav className="header">
-            <Link className="logo" to="/"><img src={logo} alt="vanlife" /></Link>
-            <Link to="/Host">Host</Link>
-            <Link to="/About">About</Link>
-            <Link to="/Vans">Vans</Link>
+            <NavLink className="logo" to="/"><img src={logo} alt="vanlife" /></NavLink>
+            <NavLink style={({isActive}) => isActive ? activeStyle : null} to="/Host">Host</NavLink>
+            <NavLink style={({isActive}) => isActive ? activeStyle : null} to="/About">About</NavLink>
+            <NavLink style={({isActive}) => isActive ? activeStyle : null} to="/Vans">Vans</NavLink>
         </nav>
     )
 }

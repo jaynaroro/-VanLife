@@ -6,7 +6,6 @@
 
 .header{
   padding: 30px;
-  height: 110px;
   display: flex;
   justify-content: center;
   align-items: center;}
@@ -184,4 +183,45 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.host-nav{
+  padding: 30px;
+}
+.host-nav a{
+  text-decoration: none;
+  color: #4D4D4D;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+.host-nav a:hover{
+  color: #161616;
+  text-decoration: underline;
+}
+
+.host-vans-page{
+  padding: 30px
+}
+
+.host-vans-page a{
+  text-decoration: none;
+  color:#252525 ;
+}
+
+.host-van-card{
+  padding: 15px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  margin-block: 20px;
+}
+
+.host-van-card img{
+  max-height: 150px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+
+
 
