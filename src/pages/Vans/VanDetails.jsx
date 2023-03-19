@@ -13,7 +13,7 @@ export default function VanDetails(){
 
     return(
     <div className="van-details">
-        <Link to="/Vans" >Back to all vans </Link>
+        <Link to=".." relative="path" >&larr; Back to all vans </Link>
         <img src={van.imageUrl} />
         <span className={`van-type ${van.type}`}>{van.type}</span>
         <h1>{van.name}</h1>
